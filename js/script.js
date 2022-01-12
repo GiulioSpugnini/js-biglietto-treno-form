@@ -37,8 +37,12 @@ generate.addEventListener('click', function() {
         console.log('Lo sconto per il passeggero è stato di: 0');
         console.log('Il prezzo del biglietto è: ', ticketPrice);
     }
-    const inputName = nameElement.value;
-    const inputTravel = travelElement.value;
+    let inputName = nameElement.value;
+    let inputTravel = travelElement.value;
     const inuputAge = ageElement.value;
     console.log(inputName, inputTravel, inuputAge);
+})
+
+cancel.addEventListener('click', function() {
+    window.location.reload();
 })
