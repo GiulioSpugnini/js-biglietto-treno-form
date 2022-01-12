@@ -5,9 +5,15 @@ const travelElement = document.getElementById("travel");
 
 const ageElement = document.getElementById("age");
 
-
+//#Buttons constant
 const generate = document.getElementById("generate");
 const cancel = document.getElementById("cancel");
+//#Results constant
+const nameResult = document.getElementById("nameResult");
+const discount = document.getElementById("discount");
+const cabin = document.getElementById("cabin");
+const codeCP = document.getElementById("codeCP");
+const price = document.getElementById("ticketPrice");
 
 generate.addEventListener('click', function() {
     // #Calcolare il prezzo per chilometro
@@ -41,6 +47,14 @@ generate.addEventListener('click', function() {
     let inputTravel = travelElement.value;
     const inuputAge = ageElement.value;
     console.log(inputName, inputTravel, inuputAge);
+    //#RESULTS
+    nameResult.innerHTML = nameElement.value;
+    discount.innerHTML = userDiscount;
+    cabin.innerHTML = Math.floor(Math.random() * 12) + 1;
+    codeCP.innerHTML = Math.floor(Math.random() * 10000) + 1;
+    price.innerHTML = finalPrice;
+
+
 })
 
 cancel.addEventListener('click', function() {
