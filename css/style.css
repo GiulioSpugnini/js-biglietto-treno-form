@@ -8,12 +8,21 @@ body {
     background-color: #b91450;
 }
 
+input,
+select {
+    border: 1px solid #b91450;
+    border-radius: 5px;
+    padding: 2px;
+    text-align: center;
+}
+
 .border-radius {
     border-radius: 10px;
     border: 1px black solid;
 }
 
 .info {
+    padding-top: 200px;
     border-radius: 10px;
 }
 
@@ -25,6 +34,15 @@ body {
 #biglietto {
     border: 1px solid black;
     border-right: none;
+}
+
+button {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+button:hover {
+    border-color: orange;
 }
 
 
