@@ -35,7 +35,7 @@ generate.addEventListener('click', function() {
             console.log('Il prezzo dopo aver applicato lo sconto è: ', finalPrice);
 
 
-        } else if (ageElement.value === 'Maggiorenne') {
+        } else if (ageElement.value === 'Over65') {
             userDiscount = (ticketPrice * 0.40).toFixed(2);
             discountType = 'Biglietto Sconto Over65';
 
