@@ -4,11 +4,27 @@
     margin: 0 auto;
 }
 
-.box,
-.ticket {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    width: 500px;
+body {
+    background-color: #b91450;
+}
+
+.border-radius {
+    border-radius: 10px;
+    border: 1px black solid;
+}
+
+.info {
+    border-radius: 10px;
+}
+
+.info ul,
+.ticket ul {
+    list-style: none;
+}
+
+
+/* COLORS */
+
+.bg-white {
+    background-color: white;
 }

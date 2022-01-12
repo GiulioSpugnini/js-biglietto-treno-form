@@ -9,30 +9,33 @@
     <meta name="Description" content="Price of the journey">
     <title>Journey</title>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' integrity='sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==' crossorigin='anonymous' />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="box">
-        <h1>CALCOLA IL PREZZO DEL BIGLIETTO</h1>
-        <div>
-            <ul>
-                <li>
-                    <h4>Nome Cognome</h4>
-                    <input type="text" id="name"></li>
-                <li>
-                    <h4>Km da Passeggero</h4>
-                    <input type="number" id="travel"></li>
-                <li>
-                    <h4>Fascia d'età</h4>
-                    <select name="name" id="age">
-                        <option value="Maggiorenne">Maggiorenne</option>
-                        <option value="Minorenne">Minorenne</option>
-                        <option value="Altro">Altro</option>
-                    </select></li>
-            </ul>
-            <button id="generate">Genera</button>
-            <button id="cancel">Annulla</button>
+    <div class="info container">
+        <div class="row text-center">
+            <h1 class="col-12 text-light">CALCOLA IL PREZZO DEL BIGLIETTO</h1>
+            <div class="col-12 border-radius bg-white">
+                <ul class="row">
+                    <li class="col-4">
+                        <h4 class="text-danger fs-6 py-3">Nome Cognome</h4>
+                        <input type="text" id="name"></li>
+                    <li class="col-4">
+                        <h4 class="text-danger fs-6 py-3">Km da Passeggero</h4>
+                        <input type="number" id="travel"></li>
+                    <li class="col-4">
+                        <h4 class="text-danger fs-6 py-3">Fascia d'età</h4>
+                        <select name="name" id="age">
+                            <option value="Maggiorenne">Maggiorenne</option>
+                            <option value="Minorenne">Minorenne</option>
+                            <option value="Altro">Altro</option>
+                        </select></li>
+                </ul>
+                <button id="generate" class="px-3 m-3 text-danger">Genera</button>
+                <button id="cancel" class="px-3 m-3 text-danger">Annulla</button>
+            </div>
         </div>
     </div>
     <div class="ticket">
