@@ -38,35 +38,37 @@
             </div>
         </div>
     </div>
-    <div class="ticket">
-        <h1>IL TUO BIGLIETTO</h1>
-        <div>
-            <h2>DETTAGLIO PASSEGGERI</h2>
-            <div>
-                <h2>NOME PASSEGGERO</h2>
-                <h3 id="nameResult"></h3>
+    <div class="ticket container">
+        <div class="row tex">
+            <h1 class="col-12 text-center text-light">IL TUO BIGLIETTO</h1>
+            <div class="col-12 border-radius bg-white px-5 py-4">
+                <h2 class="col-12">DETTAGLIO PASSEGGERI</h2>
+                <ul class="row bg-gray" id="biglietto">
+                    <li class="col-4">
+                        <h4 class="fw-bold">NOME PASSEGGERO</h4>
+                        <h3 id="nameResult"></h3>
+                    </li>
+                    <li class="col-2 bg-white">
+                        <h5 class="fw-bolder">Offerta</h4>
+                            <h4 id="discount"></h4>
+                    </li>
+                    <li class="col-2 bg-white">
+                        <h5 class="fw-bolder">Carrozza</h4>
+                            <h4 id="cabin"></h4>
+                    </li>
+                    <li class="col-2 bg-white">
+                        <h5 class="fw-bolder">Codice CP</h4>
+                            <h4 id="codeCP"></h4>
+                    </li>
+                    <li class="col-2 bg-white">
+                        <h5 class="fw-bolder">Costo biglietto</h4>
+                            <h4 id="price"></h4>
+                    </li>
+                </ul>
             </div>
+
         </div>
-        <div>
-            <ul>
-                <li>
-                    <h4>Offerta</h4>
-                    <h4 id="discount"></h4>
-                </li>
-                <li>
-                    <h4>Carrozza</h4>
-                    <h4 id="cabin"></h4>
-                </li>
-                <li>
-                    <h4>Codice CP</h4>
-                    <h4 id="codeCP"></h4>
-                </li>
-                <li>
-                    <h4>Costo biglietto</h4>
-                    <h4 id="price"></h4>
-                </li>
-            </ul>
-        </div>
+    </div>
     </div>
     <script src="js/script.js"></script>
 </body>
