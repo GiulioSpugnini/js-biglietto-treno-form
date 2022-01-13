@@ -14,6 +14,7 @@ const discount = document.getElementById("discount");
 const cabin = document.getElementById("cabin");
 const codeCP = document.getElementById("codeCP");
 const price = document.getElementById("price");
+const ticket = document.getElementById('ticket-section');
 
 generate.addEventListener('click', function() {
     //!VALIDATE
@@ -45,7 +46,7 @@ generate.addEventListener('click', function() {
             console.log('Il prezzo dopo aver applicato lo sconto è: ', finalPrice);
 
         } else {
-            ageElement.value === 'Altro';
+            ageElement.value === 'Adulto';
             userDiscount = 0;
             discountType = 'Biglietto Standard';
 
@@ -63,6 +64,10 @@ generate.addEventListener('click', function() {
         cabin.innerHTML = `<h6>${Math.floor(Math.random() * 12) + 1}</h6>`;
         codeCP.innerHTML = `<h6>${Math.floor(Math.random() * 10000) + 1}</h6>`;
         price.innerHTML = `<h6>${finalPrice} €</h6>`;
+        //#Display ticket
+        ticket.classList.add('block');
+        ticket.classList.remove('d-none');
+
 
     }
 })

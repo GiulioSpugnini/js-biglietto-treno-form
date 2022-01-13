@@ -26,13 +26,13 @@
                         <input type="text" id="name"></li>
                     <li class="col-4">
                         <h4 class="text-danger fs-6 py-3">Km da Passeggero</h4>
-                        <input type="number" id="travel"></li>
+                        <input type="number" id="travel" min="1"></li>
                     <li class="col-4">
                         <h4 class="text-danger fs-6 py-3">Fascia d'età</h4>
                         <select name="name" id="age">
                             <option value="Over65">Over65</option>
                             <option value="Minorenne">Minorenne</option>
-                            <option value="Altro">Altro</option>
+                            <option value="Adulto">Adulto</option>
                         </select></li>
                 </ul>
                 <button id="generate" class="px-3 m-3 text-danger">Genera</button>
@@ -40,7 +40,7 @@
             </div>
         </div>
     </div>
-    <div class="ticket container">
+    <div class="ticket container d-none" id="ticket-section">
         <div class="row tex">
             <div class="col-12 text-center text-light">
                 <h1 class="py-3">IL TUO BIGLIETTO</h1>
