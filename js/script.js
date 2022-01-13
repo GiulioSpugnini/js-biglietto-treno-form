@@ -20,7 +20,9 @@ generate.addEventListener('click', function() {
     //!VALIDATE
     if (!isNaN(nameElement.value) || travelElement.value < 0) {
         alert("DEVI COMPILARE CORRETTAMENTE GLI SPAZI");
-        window.location.reload();
+        nameElement.value = '';
+        travelElement.value = '';
+        ageElement.value = 'Over65';
     } else {
         // #Calcolare il prezzo per chilometro
         const ticketPrice = 0.21 * travelElement.value;
@@ -73,5 +75,8 @@ generate.addEventListener('click', function() {
 })
 
 cancel.addEventListener('click', function() {
-    window.location.reload();
+    nameElement.value = '';
+    travelElement.value = '';
+    ageElement.value = 'Over65';
+    ticket.classList.add('d-none');
 })
