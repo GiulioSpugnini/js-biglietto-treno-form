@@ -18,7 +18,7 @@ const ticket = document.getElementById('ticket-section');
 
 generate.addEventListener('click', function() {
     //!VALIDATE
-    if (!isNaN(nameElement.value) || travelElement.value < 0) {
+    if (!isNaN(nameElement.value) || !nameElement.value || travelElement.value < 0) {
         alert("DEVI COMPILARE CORRETTAMENTE GLI SPAZI");
         nameElement.value = '';
         travelElement.value = '';
